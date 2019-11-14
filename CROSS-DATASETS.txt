@@ -1,0 +1,43 @@
+1. 
+SQL query:
+join crime_assaults with unemployment_rate for each states and each year. 
+the result will show the unemployment rate and number of assaults in each state each year. 
+
+Transformation: 
+1) map agency_code in crime_assaults to states, count total assaults in each state in each year
+transform_crime_assualt_cluster.py
+
+2) map state in unemployment_rate into acronym. We will use ParDo to implement out queries. 
+
+2. 
+SQL query:
+join crime_homicide with unemployment_rate for each states and each year. 
+the result will show the unemployment rate and number of homicide in each state each year. 
+
+Transformation: 
+1) map agency_code in crime_homicide to states, count total homicide in each state in each year
+transform_crime_homicides_cluster.py
+
+2) map state in unemployment_rate into acronym. We will use ParDo to implement out queries. 
+
+3. 
+SQL query:
+join crime_rapes with unemployment_rate for each states and each year. 
+the result will show the unemployment rate and number of rapes in each state each year. 
+
+Transformation: 
+1) map agency_code in crime_rapes to states, count total rapes in each state in each year
+transform_crime_rapes_cluster.py
+
+2) map state in unemployment_rate into acronym. We will use ParDo to implement out queries. 
+
+4. 
+SQL query:
+join crime_robberies with unemployment_rate for each states and each year. 
+the result will show the unemployment rate and number of robberies in each state each year. 
+
+Transformation: 
+1) map agency_code in crime_robberies to states, count total robberies in each state in each year
+transform_crime_robberies_cluster.py
+
+2) map state in unemployment_rate into acronym. We will use ParDo to implement out queries. 
